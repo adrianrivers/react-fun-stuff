@@ -1,0 +1,36 @@
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  outline: 1px dashed black;
+  font-family: 'Arial';
+  position: relative;
+  font-size: 56px;
+}
+
+.tile span {
+  transform: rotate(90deg);
+}
